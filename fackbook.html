@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./fb2.png">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title  >Facbook-log in or Sign up</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+   
+    .password{
+        position: relative;
+        /* left: 00px; */
+    }
+     .email{ 
+       position: relative;
+       left: 507px;
+    } 
+    .input-field{
+        position: relative;
+        color: white;
+       
+        /* height: 15px; */
+        display: flex;
+    
+        align-items: flex-start
+    }
+    #main #header{
+        width: 100%;
+        display: flex;
+        height: 80px;
+        background-color: #3b5998;
+    }
+    #main #header .input{
+        height: 20px;
+         display: flex; 
+        margin-left:400px;
+        margin-top: 30px;
+    }
+    #main #header .password{
+        height: 20px;
+        margin-top: 30px;
+        margin-left:10px;
+    }
+    .bt{
+        margin-top: 30px;
+        height: 20px;
+       
+        margin-left:10px; 
+    }
+    #box{
+        margin-top: 20px;
+        width: 400px;
+        height: 500px;
+        /* border: solid black 1px; */
+        margin-left: 60%;
+    }
+     #box #innerbox{
+        width: 400px;
+        /* border: solid black 1px; */
+        height: 411px;
+     }
+     #reg{
+         margin-top: 10px;
+         height: 30px;
+         margin-left: 5px;
+         display: inline-block;
+         /* border: solid green 1px; */
+     }
+     .all{
+        border: solid mediumblue 1px;
+         border-radius: 4px;
+         height: 40px;
+         text-align: center;
+     }
+     .all1{
+         border: solid mediumblue 1px; 
+        border-radius: 4px;
+        height: 40px;
+        text-align: center;
+        width: 350px;
+        margin-top: 10px;
+     }
+    #main2{position: relative;
+        border: 1px solid black;
+      height: 120px;
+      width: 120px;
+     }
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="./logo.png" alt="">
+            <div class="input-field">
+                <!-- <label class="email" >Email OR Phone</label> -->
+                <input type="email" name="Email" class="input" placeholder="Email OR Phone">
+            </div>
+
+           <div class="input-field">
+               <label class="password">Passward</label>
+                <input type="password"  class="password" name="password" placeholder="Password" >
+           </div>
+            
+            <button class="bt">Log in</button>
+        </div>
+      
+       
+        <div id="box">
+            <div class="box1"><h1>Create a new Account</h1>
+            <h3>It's free and always will be.</h3> </div>
+            <div id="innerbox">
+                <form method="POST" id="reg" action="">
+                    <input type="text" class="all" placeholder="First Name">
+                    <input type="text"  class="all" placeholder="Surname">
+                    <input type="email" class="all1" placeholder="Mobile number or email adress">
+                    <input type="password" class="all1" placeholder="New password">
+                    <div class="">Birthday</div>
+                    <input type="date" >Why do i need to provide my date of birth?<br>
+                    Male <input type="radio"> 
+                    Female <input type="radio"><br>
+                    <button id="bt2">Sign Up</button>
+                </form>
+            </div>
+            <!-- <div id="main2"></div> -->
+
+
+        </div>
+       
+    </div>
+</body>
+</html>

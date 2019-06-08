@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes carAnimation {
+
+            0% {
+                left: 0;
+                margin-top: 0px;
+            }
+
+            50% {
+                margin-top: -10px;
+            }
+
+            100% {
+                margin-top: 0px;
+                left: 70%;
+            }
+
+        }
+
+        @keyframes wheelRotation {
+
+            0% {
+                transform: rotate(360deg)
+            }
+
+            100% {
+                transform: rotate(0deg)
+            }
+
+        }
+
+        body {
+
+            margin: 0;
+        }
+
+        #road {
+            width: 100%;
+        }
+
+        #main {
+            top: -140px;
+            width: fit-content;
+            position: relative;
+            animation-name: carAnimation;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        #car {
+            position: relative;
+            top: -50px;
+            width: 30%;
+
+        }
+
+        .wheel {
+            animation-name: wheelRotation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative;
+            width: 50px;
+        }
+
+        .wheel:nth-child(2) {
+            left: -320px;
+            top: -75px;
+        }
+
+        .wheel:nth-child(3) {
+            left: -158px;
+            top: -75px;
+        }
+
+        #main2 {
+            top: -450px;
+            width: fit-content;
+            position: relative;
+            transform: scaleX(-1);
+            animation-name: carAnimation1;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+
+        }
+
+        #car2 {
+            position: relative;
+            top: -50px;
+            width: 30%;
+        }
+
+        .wheel2 {
+            animation-name: wheelRotation2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative;
+            width: 50px;
+        }
+
+        .wheel2:nth-child(2) {
+            left: -320px;
+            top: -75px;
+        }
+
+        .wheel2:nth-child(3) {
+            left: -158px;
+            top: -75px;
+        }
+
+        @keyframes carAnimation1 {
+
+            0% {
+                right: -20%;
+                /* margin-top:0px; */
+            }
+
+            50% {
+                margin-top: -10px;
+            }
+
+            100% {
+                /* margin-top:0px; */
+                right: 100%;
+            }
+
+        }
+
+        @keyframes wheelRotation2 {
+
+            0% {
+                transform: rotate(360deg)
+            }
+
+            100% {
+                transform: rotate(0deg)
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="road" src="./myroad.jpg">
+    </div>
+    <div id="main">
+
+        <img id="car" src="./my-car.png">
+        <img class="wheel" src="./wheel.png">
+        <img class="wheel" src="./wheel.png">
+    </div>
+    <div id="main2">
+
+        <img id="car2" src="./my-car.png">
+        <img class="wheel2" src="./wheel.png">
+        <img class="wheel2" src="./wheel.png">
+    </div>
+
+</body>
+
+</html>
